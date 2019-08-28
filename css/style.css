@@ -1,0 +1,154 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+
+}
+
+.flex-container {
+    display: flex;
+    /* background-color: DodgerBlue; */
+    
+  }
+  
+  .flex-container > div {
+    /* background-color: #f1f1f1; */
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    
+    
+  }
+
+  .flex-container2 {
+    display: flex;
+    /* background-color: DodgerBlue; */
+    flex-direction: column;
+    min-height: 100vh;
+
+  }
+  .flex-container2 > div {
+    /* background-color: #f1f1f1; */
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    min-height: 300px;
+  }
+
+  .flex-container2-innerContainer {
+    display: flex;
+    /* background-color: DodgerBlue; */
+    flex-direction: row;
+    
+    justify-content: center;
+  }
+
+  .flex-container2-innerContainer > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    min-height: 200px;
+    width: 300px;
+  }
+
+  .flex-container2-innerContainer2 {
+    display: flex;
+    /* background-color: DodgerBlue; */
+    flex-direction: row;
+    justify-content: center;
+    
+  }
+
+  .flex-container2-innerContainer2 > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    min-height: 200px;
+    width: 300px;
+  }
+
+#box-1_1{
+  
+  background: url(../images/zenGarden.JPG);
+  background-position: center;
+  background-size: 50%;
+  
+  
+}
+ 
+
+.sidebar{
+    order:1;
+    width: 20%;
+  }
+
+.headerClass{
+    order:2;
+    width: 100%;
+    text-align: center;
+  }
+
+
+
+#sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #151719;
+    left: -225px;
+    transition: all 500ms linear;
+}
+
+#sidebar.active{
+    left: 0px;
+}
+
+#sidebar ul li{
+    color:rgba(230,230,230,0.9);
+    list-style: none;
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(100,100,100,0.3);
+}
+
+#sidebar .toggle-btn{
+    position: absolute;
+    left: 230px;
+    top: 20px;
+}
+
+#sidebar .toggle-btn span {
+    display: block;
+    width: 30px;
+    height:5px;
+    background: white;
+    margin: 5px 0px;
+    
+
+}
+
+
+h1{
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 8px grey;
+}
+
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1; 
+  width: 100%;
+  padding: 20px;
+}

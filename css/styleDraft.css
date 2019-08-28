@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+
+}
+
+#sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #151719;
+    left: -200px;
+    transition: all 500ms linear;
+}
+
+#sidebar.active{
+    left: 0px;
+}
+
+#sidebar ul li{
+    color:rgba(230,230,230,0.9);
+    list-style: none;
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(100,100,100,0.3);
+}
+
+#sidebar .toggle-btn{
+    position: absolute;
+    left: 230px;
+    top: 20px;
+}
+
+#sidebar .toggle-btn span {
+    display: block;
+    width: 30px;
+    height:5px;
+    background: #151719;
+    margin: 5px 0px;
+    
+
+}
+
+
+/* flex box CSS */
+.container-1{
+    display: flex;
+    width: 100%;
+    margin: 200px 300px;
+    justify-content: space-between;
+    /* padding: 100px; */
+
+    /* changes the direction of the boxes into a column */
+    /* flex-direction: column; */
+
+    border:1px goldenrod solid;
+    /* text-align:center;
+    justify-content: center; */
+
+    
+    
+}
+
+.container-2{
+    /* now you can use the flex methods on this */
+    display: inline-flex;
+    margin: -100px 300px;
+
+    border:1px goldenrod solid;
+    /* text-align:center; */
+    
+  
+
+    
+}
+
+/* now container 2 is also part of the class and will get the padding and border given to
+the first container */
+.container-1 div, .container-2 div{
+    border:1px #ccc solid;
+    /* justify-content: left; */
+    
+    
+}
+
+.box-1{
+    /* so flex is how you determine the priority of the width of the box by giving it a higher 
+    flex value then the other one then it becomes bigger then the other */
+    /* flex: 1; */
+
+    /* items are aligned to the start of the container DEFAULT VALUE */
+    /* justify-content: flex-start; */
+
+    /* this allows you to change the order of the boxes */
+    order: 1;
+    
+}
+
+.box-2{
+    /* flex:1; */
+    order: 2;
+}
+
+.box-3{
+    /* flex:1; */
+    order: 3;
+}
+
+
+/* as we have names all the boxes with the same class name we can work on them all with this 
+keyword */
+.container-2-box{
+    
+    
+    /* width of the boxes are 20 percent */
+    /* width: 20%; */
+}
